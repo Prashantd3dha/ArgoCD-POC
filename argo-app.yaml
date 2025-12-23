@@ -5,11 +5,11 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: argocd
+    namespace: webapp
     server: https://kubernetes.default.svc
-  project: argocd
+  project: default
   source:
-    path: './'
+    path: 'webapp'
     repoURL: https://github.com/Prashantd3dha/ArgoCD-POC
     targetRevision: main
   syncPolicy:
